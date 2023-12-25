@@ -20,7 +20,7 @@ const sendEmail = (req, res) => {
   });
   const mailOptions = {
     from: '"Muktadir Hossain" <rabbi@tara.net.bd>', //youremail@gmail.com
-    to: `"Topu Vai" <${email}>`, // USERS EMAIL <mdtopu11@gmail.com>
+    to: `<${email}>`, // USERS EMAIL <mdtopu11@gmail.com>
     subject: `${subject}`,
     text: `${subject}`, //resetPasswordLink
     html: `<html lang="en">
@@ -54,7 +54,7 @@ const sendEmail = (req, res) => {
     <body>
       <div class="container">
         <p id="emailBody">${emailBody}</p>
-        <img src="https://muktadirhossain.github.io/hot-gadgets/images/phone/phone-3.png" alt="images" />
+       
       </div>
     </body>
   </html>
